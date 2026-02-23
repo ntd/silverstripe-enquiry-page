@@ -304,8 +304,8 @@ class EnquiryFormField extends DataObject
     {
         $valid = parent::validate();
 
-        $this->FieldName = trim($this->FieldName);
-        $this->FiledType = trim($this->FieldType);
+        $this->FieldName = trim((string) $this->FieldName);
+        $this->FiledType = trim((string) $this->FieldType);
 
         if ('HTML' == $this->FieldType) {
             $this->FieldName = 'HTML';
