@@ -45,7 +45,7 @@ class EnquiryPage extends \Page
     /**
      * Looked up in $_SERVER
      *
-     * @var string
+     * @var string|array
      */
     private static $client_ip_fields = 'REMOTE_ADDR';
 
